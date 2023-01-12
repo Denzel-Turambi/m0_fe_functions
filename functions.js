@@ -17,13 +17,21 @@ printIntroduction("Denzel");
 // 3: Write a function that has 3 parameters: a string and two numbers. The String will be the name of a company, and the numbers will represent the minimum and maximum of a pay range for a posted job. The function should print out a sentence that includes the name of the company and the range itself (if the numbers passed in are 90000 and 110000, the pay range is 20000).
 function payRange(company, num1, num2) {
     var sum = num2 - num1
-    console.log(`${company}'s pay range is ${sum}`)
+    console.log(`${company}'s pay range is ${sum}`);
 }
 
-payRange("Slack", 90000, 110000)
+payRange("Slack", 90000, 110000);
 
 // 4: Write a function that satifies the following interaction pattern:
-
+function checkStock(num3, item){
+    if (num3 === 0){
+        console.log(`${item} - is OUT of stock!`)
+    } else if (num3 < 4) {
+        console.log(`${item} - running LOW`)
+    } else {
+        console.log(`${item} is stocked`)
+    }
+}
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
 
