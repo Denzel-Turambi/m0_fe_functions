@@ -18,13 +18,15 @@ nameQuestion();
 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-console.log(sum);
-      }
+    var sum = first + second + third
+    console.log(sum);
+}
 
 addThreeNums(1, 2, 3);
 addThreeNums(4, 2, 7);
-
+// indented the code in the code block
+// moved the final curly bracket all the way to the left
+// added ;'s to keep it consistent with the rest of the code
 
 // EX 3:
 function makeFreshPesto(){
