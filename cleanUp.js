@@ -9,11 +9,12 @@
 
 // EX 1:
 function nameQuestion() {
-  console.log("Hello, what is your name?")
+  console.log(`Hello, what is your name?`);
 }
 
-nameQuestion()
-
+nameQuestion();
+// replaced "" with ``
+// added ;'s to keep it consistant with the rest of the code below
 
 // EX 2:
 function addThreeNums(first, second, third) {
@@ -26,21 +27,27 @@ addThreeNums(4, 2, 7);
 
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
+  console.log("Season");    
+}
 
 makeFreshPesto();
-
+// fixed `func` to `function` in order for it to be recognized as a function
 
 //  EX 4:
-function average(num1, num2) 
-  {
+function average(num1, num2) {
 var sum = num1 + num2;
     var avg = sum / 2;
 
-  console.log(`the average is: ${avg}`.)
+  console.log(`the average is: ${avg}`)
   }
+
+  average(25, 46)
+
+  //removed the period from the console.log argument, because it caused an error
+  // added call, otherwise nothing would print
+  
