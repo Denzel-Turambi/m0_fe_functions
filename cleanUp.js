@@ -42,14 +42,14 @@ makeFreshPesto();
 
 //  EX 4:
 function average(num1, num2) {
-var sum = num1 + num2;
-    var avg = sum / 2;
-
+  var sum = num1 + num2;
+  var avg = sum / 2;
   console.log(`the average is: ${avg}`)
-  }
+};
 
-  average(25, 46)
+average(25, 46)
 
   //removed the period from the console.log argument, because it caused an error
   // added call, otherwise nothing would print
-  
+  // indented everything between {} by one to make it easier to read
+  //call placed all the way to the left
