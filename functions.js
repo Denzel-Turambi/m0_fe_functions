@@ -23,7 +23,7 @@ function payRange(company, num1, num2) {
 payRange("Slack", 90000, 110000);
 
 // 4: Write a function that satifies the following interaction pattern:
-function checkStock(num3, item){
+function quantity(num3, item){
     if (num3 === 0){
         console.log(`${item} - is OUT of stock!`)
     } else if (num3 < 4) {
@@ -32,14 +32,14 @@ function checkStock(num3, item){
         console.log(`${item} is stocked`)
     }
 }
-checkStock(4, "Coffee");
+quantity(4, "Coffee");
 // => "Coffee is stocked"
 
-checkStock(3, "Tortillas");
+quantity(3, "Tortillas");
 // => "Tortillas - running LOW"
 
-checkStock(0, "Cheese");
+quantity(0, "Cheese");
 // => "Cheese - OUT of stock!"
 
-checkStock(1, "Salsa");
+quantity(1, "Salsa");
 // => "Salsa - running LOW"
